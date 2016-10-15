@@ -1,0 +1,48 @@
+Lore:
+
+	Basic Information:
+		Location = Denver, Colorado, USA
+		Date = October 10, 2016 AD
+		Format = "Roctal", octal that rocks \m/
+		Data Description = ASCII file of United State Constitution(USC)
+		Media  = ink on paper
+		side = 250 micronsp[0.01 inches], 4Xside = 1 mm[0.04 inches]
+		author = Lafe Spietz
+	
+	Description:
+		File size of USC is 26,821 bytes, each of which is a 7 bit ASCII character
+		64X64 character block is 6.4 cm[2.5 inches] X 6.4 cm, 7 blocks required for file
+		7 blocks are a subset of an 8 block pattern with two columns and 4 rows
+		each 64X64 block shall have a pair of rectangles as alignment marks in each of the 
+		four corners, where the upper left corner(corner of the corner) is defined as the local coordinate (0,0),
+		where local coordinates are all measured in the unit "side", defined above
+		blocks read left to right first then top to bottom
+
+	entities: 
+		ink
+		paper
+		rectangle filled in
+
+	operations[to be encoded using eighth bit later for assembly code]:
+		creation
+		movement/copy
+		scale up 
+		scale down
+
+	links:
+		main roctal repository
+		local roctal repository
+		ASCII table
+		printer information
+		press info on the project, added as we go
+		
+	
+		
+Tale:
+
+	I've been working on this Roctal stuff now for a few weeks, and it's taken many forms. 
+	 This is my attempt to make something that is interesting to someone.  I chose the 
+	 US Constitution because it's clearly public domain, is a nice length for this format,
+	 and should be pretty widely of interest to people in the US at least.  After trying
+	 it on paper, hopefully the next step is to do it in gold and silicon as a long term 
+	 data storage demo. 
