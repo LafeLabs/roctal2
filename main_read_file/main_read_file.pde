@@ -1,22 +1,34 @@
 int x,y;
-int side = 8;
+int side = 20;
 float floatSide = side;
 color oneColor = color(0,0,0); //black
 color zeroColor = color(255,255,255); //white
+int columns = 4;
+int rows = 3;
 
 void setup(){
   background(255);
   noFill();
-  size(57,511);
+  size(500,500);//1936,1936
 }
 
 void draw(){
- PImage myImage = loadImage("message3.png");
+ PImage myImage = loadImage("abcd1.jpg");
  image(myImage, 0, 0,width,height);
- x = mouseX - 4*side;
- y = mouseY - 4*side;
- rect(x,y,4*side,4*side);
- println(char(getByte()));
+ x = mouseX + 4*side;
+ y = mouseY + 4*side;
+ for(int rowIndex = 0;rowIndex < rows;rowIndex++){
+   for(int columnIndex = 0;columnIndex < columns;columnIndex++){
+     x = mouseX + 4*side + 4*side*columnIndex;
+     y = mouseY + 4*side + 4*side*rowIndex;
+     rect(x,y,4*side,4*side);
+     calibrate();
+     print(char(getByte()));
+   }
+ }
+ println();
+// println(char(getByte()));
+
 }
 
 color getColor(int localX,int localY){
