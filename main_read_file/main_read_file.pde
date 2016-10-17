@@ -5,30 +5,46 @@ color oneColor = color(0,0,0); //black
 color zeroColor = color(255,255,255); //white
 int columns = 4;
 int rows = 3;
+String myString = "";
+char myChar;
+int myInt;
 
 void setup(){
   background(255);
   noFill();
   size(500,500);//1936,1936
+  textSize(36);
 }
 
 void draw(){
  PImage myImage = loadImage("abcd1.jpg");
  image(myImage, 0, 0,width,height);
- x = mouseX + 4*side;
- y = mouseY + 4*side;
+ x = mouseX;
+ y = mouseY;
+ fill(0);
+ rect(x,y,8*side,2*side);
+ rect(x,y,2*side,8*side);
+ rect(x + 4*side*columns + 6*side,y + 4*side*rows + 6*side,2*side,2*side);
+ noFill();
+ myString = "";
  for(int rowIndex = 0;rowIndex < rows;rowIndex++){
    for(int columnIndex = 0;columnIndex < columns;columnIndex++){
      x = mouseX + 4*side + 4*side*columnIndex;
      y = mouseY + 4*side + 4*side*rowIndex;
      rect(x,y,4*side,4*side);
      calibrate();
-     print(char(getByte()));
+     myInt = getByte();
+     if(myInt > 31 && myInt < 127){
+       myChar = char(myInt);
+       myString += str(myChar);
+     }
+    
    }
  }
- println();
-// println(char(getByte()));
-
+ if(myString.length() == 12){
+   println(myString);
+   text(myString,side,height - 4*side);
+ }
 }
 
 color getColor(int localX,int localY){
