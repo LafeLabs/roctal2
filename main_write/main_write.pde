@@ -1,76 +1,39 @@
-import processing.pdf.*;
-
-int side = 5;
+int side = 10;
 
 int bitIndex = 0;
 int X,Y;
-int numberofColumns = 32;
-int numberofRows = 32;
+int numberofColumns = 5;
+int numberofRows = 5;
+int blockLength = numberofRows*numberofColumns;
 int columnIndex,rowIndex;
 int blockPositionX = 0;
 int blockPositionY = 0;
 int globalIndex = 0;
-int[] blockArray = new int[1024];
-int blockSpacing = 140*side;
 int xBlocks = 4;
 int yBlocks = 7;
 int blockIndex = 0;
+String message = "TOO MANY SECRETS";
+int[] blockArray = new int[blockLength];
 
 void setup() {
-  size(3000,5000, PDF, "thisFile.pdf");
+  size(380,380);
   background(255);
   strokeWeight(0.01);
   fill(0);
-  for(int localIndex = 0;localIndex < 1024;localIndex++){
-    blockArray[localIndex] = 0;
+  for(int localIndex = 0;localIndex < message.length();localIndex++){
+    blockArray[localIndex] = int(message.charAt(localIndex));
   }
 }
 
 void draw() {
-  byte b[] = loadBytes("description2.txt");  //description
-  byte USC[] = loadBytes("USC.txt");
-
- for(int localIndex = 0;localIndex < b.length && localIndex < 1024;localIndex++){
-    blockArray[localIndex] = b[localIndex];
- }
- blockWrite();
-
- for(blockIndex = 1;blockIndex < 26;blockIndex++){
-   for(int localIndex = 0;localIndex < USC.length && localIndex < 1024;localIndex++){
-      blockArray[localIndex] = USC[localIndex + 1024*blockIndex];
-   }
-   blockPositionX = blockSpacing*(blockIndex%4);
-   blockPositionY = blockSpacing*(blockIndex/4);
-   
-   blockWrite();
- 
- }
- 
- blockPositionX += blockSpacing;
- 
- int lastBlockLength  = USC.length - 1024*26;
- println(lastBlockLength);
- 
- for(int localIndex = 0;localIndex < 1024;localIndex++){
-    blockArray[localIndex] = 0;
- }
-
- 
-for(int localIndex = 0;localIndex < lastBlockLength;localIndex++){
-    blockArray[localIndex] = USC[localIndex + 1024*26];
- }
- blockWrite();
-
- 
-  // Exit the program 
-  println("Finished.");
-  exit();
+ blockWrite(); 
+ noLoop();
 }
 
 void blockWrite(){
   rect(blockPositionX,blockPositionY,4*side,12*side);
   rect(blockPositionX,blockPositionY,12*side,4*side);
-  rect(blockPositionX + blockSpacing,blockPositionY + blockSpacing,4*side,4*side);
+  rect(blockPositionX + side*(12 + 4*numberofColumns),blockPositionY + side*(12 + 4*numberofRows),4*side,4*side);
   globalIndex = 0;
   for(rowIndex = 0;rowIndex < numberofRows;rowIndex++){
    for(columnIndex = 0;columnIndex < numberofColumns;columnIndex++){
