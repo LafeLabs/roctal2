@@ -13,12 +13,12 @@ void setup(){
   background(255);
   fill(0);
   noFill();
-  size(360,360);//1936,1936
+  size(236,236);
   textSize(36);
 }
 
 void draw(){
- PImage myImage = loadImage("message4.png");
+ PImage myImage = loadImage("secrets2.jpg");
  image(myImage, 0, 0,width,height);
  x = mouseX;
  y = mouseY;

@@ -1,4 +1,4 @@
-int side = 10;
+int side = 20;
 
 int bitIndex = 0;
 int X,Y;
@@ -16,7 +16,7 @@ String message = "TOO MANY SECRETS";
 int[] blockArray = new int[blockLength];
 
 void setup() {
-  size(380,380);
+  size(800,800);
   background(255);
   strokeWeight(0.01);
   fill(0);
