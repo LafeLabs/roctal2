@@ -1,0 +1,7 @@
+U.S. Constitution, ASCII format, Roctal coded.
+Denver, Colorado, USA, October 2016
+each block of 32X32 has 1024 bytes, or 1kbyte
+26,821 bytes is over 26 but under 28k, so I will put it in a 4x7 array(columnsxrows)
+7 rows of 4 blocks on each row, read left to right first then top to bottom.
+
+www.github.com/lafelabs/roctal
