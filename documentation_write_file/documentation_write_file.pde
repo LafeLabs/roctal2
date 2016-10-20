@@ -1,6 +1,6 @@
 import processing.pdf.*;
 
-int side = 50;
+int side = 80;
 
 int bitIndex = 0;
 int X,Y;
@@ -18,7 +18,7 @@ int blockIndex = 0;
 
 void setup() {
 //  size(3000,5000, PDF, "thisFile.pdf");
-  size(500,500);
+  size(500,800);
   background(255);
   strokeWeight(0.01);
   fill(0);
@@ -28,10 +28,25 @@ void setup() {
 }
 
 void draw() {
+  X = 0;
+  Y = 0;
+  charWrite(X,Y,int('A'));
+  side /= 2;
+  Y += 9*side;
+  charWrite(X,Y,int('B'));
+  side /= 2;
+  Y += 9*side;
+  charWrite(X,Y,int('C'));
+  side /= 2;
+  Y += 9*side;
+  charWrite(X,Y,int('D'));
+  side /= 2;
+  Y += 9*side;
+  charWrite(X,Y,int('E'));
+  side /= 2;
+  Y += 9*side;
+  charWrite(X,Y,int('F'));
 
-   charWrite(width/4,height/4,int('A'));
-  textSize(40);
-  text('A',width/8,height/8);
   // Exit the program 
   //println("Finished.");
   //exit();
