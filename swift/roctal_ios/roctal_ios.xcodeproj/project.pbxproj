@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C44CD21DB9985E002FE7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C44CD11DB9985E002FE7FE /* AppDelegate.swift */; };
+		30C44CD41DB9985E002FE7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C44CD31DB9985E002FE7FE /* ViewController.swift */; };
+		30C44CD71DB9985E002FE7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C44CD51DB9985E002FE7FE /* Main.storyboard */; };
+		30C44CDA1DB9985E002FE7FE /* roctal_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30C44CD81DB9985E002FE7FE /* roctal_ios.xcdatamodeld */; };
+		30C44CDC1DB9985E002FE7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C44CDB1DB9985E002FE7FE /* Assets.xcassets */; };
+		30C44CDF1DB9985E002FE7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C44CDD1DB9985E002FE7FE /* LaunchScreen.storyboard */; };
+		30C44CEA1DB9985E002FE7FE /* roctal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C44CE91DB9985E002FE7FE /* roctal_iosTests.swift */; };
+		30C44CF51DB9985E002FE7FE /* roctal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C44CF41DB9985E002FE7FE /* roctal_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30C44CE61DB9985E002FE7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30C44CC61DB9985D002FE7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C44CCD1DB9985D002FE7FE;
+			remoteInfo = roctal_ios;
+		};
+		30C44CF11DB9985E002FE7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30C44CC61DB9985D002FE7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C44CCD1DB9985D002FE7FE;
+			remoteInfo = roctal_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30C44CCE1DB9985E002FE7FE /* roctal_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roctal_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C44CD11DB9985E002FE7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30C44CD31DB9985E002FE7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30C44CD61DB9985E002FE7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C44CD91DB9985E002FE7FE /* roctal_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = roctal_ios.xcdatamodel; sourceTree = "<group>"; };
+		30C44CDB1DB9985E002FE7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C44CDE1DB9985E002FE7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C44CE01DB9985E002FE7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C44CE51DB9985E002FE7FE /* roctal_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roctal_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C44CE91DB9985E002FE7FE /* roctal_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roctal_iosTests.swift; sourceTree = "<group>"; };
+		30C44CEB1DB9985E002FE7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C44CF01DB9985E002FE7FE /* roctal_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roctal_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C44CF41DB9985E002FE7FE /* roctal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roctal_iosUITests.swift; sourceTree = "<group>"; };
+		30C44CF61DB9985E002FE7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C44CCB1DB9985D002FE7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CE21DB9985E002FE7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CED1DB9985E002FE7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C44CC51DB9985D002FE7FE = {
+			isa = PBXGroup;
+			children = (
+				30C44CD01DB9985E002FE7FE /* roctal_ios */,
+				30C44CE81DB9985E002FE7FE /* roctal_iosTests */,
+				30C44CF31DB9985E002FE7FE /* roctal_iosUITests */,
+				30C44CCF1DB9985E002FE7FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C44CCF1DB9985E002FE7FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C44CCE1DB9985E002FE7FE /* roctal_ios.app */,
+				30C44CE51DB9985E002FE7FE /* roctal_iosTests.xctest */,
+				30C44CF01DB9985E002FE7FE /* roctal_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C44CD01DB9985E002FE7FE /* roctal_ios */ = {
+			isa = PBXGroup;
+			children = (
+				30C44CD11DB9985E002FE7FE /* AppDelegate.swift */,
+				30C44CD31DB9985E002FE7FE /* ViewController.swift */,
+				30C44CD51DB9985E002FE7FE /* Main.storyboard */,
+				30C44CDB1DB9985E002FE7FE /* Assets.xcassets */,
+				30C44CDD1DB9985E002FE7FE /* LaunchScreen.storyboard */,
+				30C44CE01DB9985E002FE7FE /* Info.plist */,
+				30C44CD81DB9985E002FE7FE /* roctal_ios.xcdatamodeld */,
+			);
+			path = roctal_ios;
+			sourceTree = "<group>";
+		};
+		30C44CE81DB9985E002FE7FE /* roctal_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				30C44CE91DB9985E002FE7FE /* roctal_iosTests.swift */,
+				30C44CEB1DB9985E002FE7FE /* Info.plist */,
+			);
+			path = roctal_iosTests;
+			sourceTree = "<group>";
+		};
+		30C44CF31DB9985E002FE7FE /* roctal_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30C44CF41DB9985E002FE7FE /* roctal_iosUITests.swift */,
+				30C44CF61DB9985E002FE7FE /* Info.plist */,
+			);
+			path = roctal_iosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C44CCD1DB9985D002FE7FE /* roctal_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C44CF91DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_ios" */;
+			buildPhases = (
+				30C44CCA1DB9985D002FE7FE /* Sources */,
+				30C44CCB1DB9985D002FE7FE /* Frameworks */,
+				30C44CCC1DB9985D002FE7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = roctal_ios;
+			productName = roctal_ios;
+			productReference = 30C44CCE1DB9985E002FE7FE /* roctal_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30C44CE41DB9985E002FE7FE /* roctal_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C44CFC1DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_iosTests" */;
+			buildPhases = (
+				30C44CE11DB9985E002FE7FE /* Sources */,
+				30C44CE21DB9985E002FE7FE /* Frameworks */,
+				30C44CE31DB9985E002FE7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C44CE71DB9985E002FE7FE /* PBXTargetDependency */,
+			);
+			name = roctal_iosTests;
+			productName = roctal_iosTests;
+			productReference = 30C44CE51DB9985E002FE7FE /* roctal_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30C44CEF1DB9985E002FE7FE /* roctal_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C44CFF1DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_iosUITests" */;
+			buildPhases = (
+				30C44CEC1DB9985E002FE7FE /* Sources */,
+				30C44CED1DB9985E002FE7FE /* Frameworks */,
+				30C44CEE1DB9985E002FE7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C44CF21DB9985E002FE7FE /* PBXTargetDependency */,
+			);
+			name = roctal_iosUITests;
+			productName = roctal_iosUITests;
+			productReference = 30C44CF01DB9985E002FE7FE /* roctal_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C44CC61DB9985D002FE7FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Lafe Spietz";
+				TargetAttributes = {
+					30C44CCD1DB9985D002FE7FE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					30C44CE41DB9985E002FE7FE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30C44CCD1DB9985D002FE7FE;
+					};
+					30C44CEF1DB9985E002FE7FE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30C44CCD1DB9985D002FE7FE;
+					};
+				};
+			};
+			buildConfigurationList = 30C44CC91DB9985D002FE7FE /* Build configuration list for PBXProject "roctal_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C44CC51DB9985D002FE7FE;
+			productRefGroup = 30C44CCF1DB9985E002FE7FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C44CCD1DB9985D002FE7FE /* roctal_ios */,
+				30C44CE41DB9985E002FE7FE /* roctal_iosTests */,
+				30C44CEF1DB9985E002FE7FE /* roctal_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C44CCC1DB9985D002FE7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C44CDF1DB9985E002FE7FE /* LaunchScreen.storyboard in Resources */,
+				30C44CDC1DB9985E002FE7FE /* Assets.xcassets in Resources */,
+				30C44CD71DB9985E002FE7FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CE31DB9985E002FE7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CEE1DB9985E002FE7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C44CCA1DB9985D002FE7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C44CD41DB9985E002FE7FE /* ViewController.swift in Sources */,
+				30C44CDA1DB9985E002FE7FE /* roctal_ios.xcdatamodeld in Sources */,
+				30C44CD21DB9985E002FE7FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CE11DB9985E002FE7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C44CEA1DB9985E002FE7FE /* roctal_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C44CEC1DB9985E002FE7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C44CF51DB9985E002FE7FE /* roctal_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30C44CE71DB9985E002FE7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C44CCD1DB9985D002FE7FE /* roctal_ios */;
+			targetProxy = 30C44CE61DB9985E002FE7FE /* PBXContainerItemProxy */;
+		};
+		30C44CF21DB9985E002FE7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C44CCD1DB9985D002FE7FE /* roctal_ios */;
+			targetProxy = 30C44CF11DB9985E002FE7FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30C44CD51DB9985E002FE7FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C44CD61DB9985E002FE7FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30C44CDD1DB9985E002FE7FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C44CDE1DB9985E002FE7FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C44CF71DB9985E002FE7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30C44CF81DB9985E002FE7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C44CFA1DB9985E002FE7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = roctal_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		30C44CFB1DB9985E002FE7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = roctal_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		30C44CFD1DB9985E002FE7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = roctal_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roctal_ios.app/roctal_ios";
+			};
+			name = Debug;
+		};
+		30C44CFE1DB9985E002FE7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = roctal_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roctal_ios.app/roctal_ios";
+			};
+			name = Release;
+		};
+		30C44D001DB9985E002FE7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = roctal_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = roctal_ios;
+			};
+			name = Debug;
+		};
+		30C44D011DB9985E002FE7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = roctal_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lafelabs.roctal-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = roctal_ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C44CC91DB9985D002FE7FE /* Build configuration list for PBXProject "roctal_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C44CF71DB9985E002FE7FE /* Debug */,
+				30C44CF81DB9985E002FE7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C44CF91DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C44CFA1DB9985E002FE7FE /* Debug */,
+				30C44CFB1DB9985E002FE7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30C44CFC1DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C44CFD1DB9985E002FE7FE /* Debug */,
+				30C44CFE1DB9985E002FE7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30C44CFF1DB9985E002FE7FE /* Build configuration list for PBXNativeTarget "roctal_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C44D001DB9985E002FE7FE /* Debug */,
+				30C44D011DB9985E002FE7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30C44CD81DB9985E002FE7FE /* roctal_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30C44CD91DB9985E002FE7FE /* roctal_ios.xcdatamodel */,
+			);
+			currentVersion = 30C44CD91DB9985E002FE7FE /* roctal_ios.xcdatamodel */;
+			path = roctal_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 30C44CC61DB9985D002FE7FE /* Project object */;
+}

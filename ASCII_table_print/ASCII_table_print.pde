@@ -38,6 +38,11 @@ println();
      text(ones,float(side*2),float(7*side + 4*side*(ones-4))); 
   }
 
+  for(int ones = 0 ;ones < 8; ones++){
+     text(ones,float(side*2),float(26*side + 4*side*(ones))); 
+  }
+
+
   noLoop();
   exit();
 }
@@ -52,7 +57,7 @@ void charWrite(int localX, int localY,int localInt){//stripped down version
    text("SPACE",float(localX + side),float(localY+side));
   }
   else{
-    text(char(localInt),float(localX+side),float(localY + side));
+    text(char(localInt),float(localX + 2*side),float(localY + side));
   }
   int bitIndex = 8;
   for(int indexY = 1;indexY < 4;indexY++){
