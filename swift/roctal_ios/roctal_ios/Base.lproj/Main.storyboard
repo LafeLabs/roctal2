@@ -40,6 +40,12 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXD-fA-lIe">
                                 <frame key="frameInset" minX="67" minY="348" width="240" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SR3-57-syn">
+                                        <frame key="frameInset" minX="-8" minY="-120" width="240" height="422"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -47,6 +53,7 @@
                     </view>
                     <connections>
                         <outlet property="getMessage" destination="hHW-D3-P2v" id="7Wl-rl-RpO"/>
+                        <outlet property="iceking" destination="8bC-Xf-vdC" id="RhW-Fh-yqE"/>
                         <outlet property="myTextField1" destination="hHW-D3-P2v" id="y7w-pZ-Xla"/>
                     </connections>
                 </viewController>

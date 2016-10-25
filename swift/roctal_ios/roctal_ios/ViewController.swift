@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myTextField1: UITextField!
     
+    @IBOutlet var iceking: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
